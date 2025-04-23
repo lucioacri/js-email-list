@@ -17,5 +17,8 @@ const generateEmail = (number) => {
     getRandomEmail();
   }
 };
-generateEmail(10);
-console.log(emailsArray);
+emailsForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  generateEmail(10);
+  console.log(emailsArray);
+});
